@@ -1,0 +1,1498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Container for Centering Content */
+.nav-class-cont,
+.h-land-para,
+.climate-impact-container,
+.climate-cards-container,
+.destinations-section-container,
+.all-destinations-container,
+.calculator-main-container,
+.tips-main-container,
+.sustainable-content-container,
+.subscription-content-container,
+.footer-sections-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+        /* Your provided CSS for the header and navigation bar */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        #top-header.header-scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-class-cont {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 7xl; /* Tailwind max-width equivalent */
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1.5rem; /* px-6 equivalent */
+            padding-right: 1.5rem; /* px-6 equivalent */
+        }
+
+        .page-logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c5530;
+        }
+
+        .page-logo i {
+            margin-right: 0.5rem;
+            color: #4CAF50;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            padding: 0; /* Ensure no default padding */
+            margin: 0; /* Ensure no default margin */
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333; /* Original color from your provided CSS */
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: #4CAF50; /* Original hover color from your provided CSS */
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #4CAF50; /* Original underline color from your provided CSS */
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-toggle {
+            display: none; /* Hidden by default for desktop */
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #2c5530; /* Match logo color for consistency */
+        }
+/* Hero Section */
+.landing-part {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+
+.h-land-para {
+    max-width: 800px;
+    padding: 0 2rem;
+    opacity: 1;
+    transform: translateY(50px);
+    margin-top: 70px;
+}
+
+.landing-part h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.landing-part p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+    opacity: 1;
+    transform: translateY(30px);
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4caf4ffa;
+    display: block;
+}
+
+.stat-number::after {
+    content: '';
+    font-size: 2.8rem;
+    vertical-align: super;
+}
+
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 1;
+    margin-top: 0.5rem;
+}
+
+.landing-part-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 80px;
+    opacity: 1;
+    transform: translateY(30px);
+}
+
+.land-btn {
+  display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;  /* Larger buttons */
+    border-radius: 50px; /* More rounded */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem; /* Consistent font size */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.land-1st-btn {
+
+    background-color: #15ce4c;
+    color: white;
+    box-shadow: 0 5px 15px rgb(58, 236, 153);
+}
+
+.land-1st-btn:hover {
+
+    background-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(22, 196, 100, 0.384);}
+
+.land-2nd-btn {
+    background-color:  transparent;        border-radius: 2px solid 2px #f2f5f3;
+    color: white;
+    padding-bottom: 15px;
+    box-shadow: 0 8px 20px rgba(22, 196, 100, 0.384);
+
+}
+
+.land-2nd-btn:hover {
+    background-color:  #15ce4c;
+    transform: translateY(-1px);
+    color: white;
+    box-shadow: 0 8px 20px rgba(22, 196, 100, 0.384);
+}
+
+/* Section Headers */
+.section-title, .section-header h1 { /* Combined for similar styling */
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #080808; /* Original .section-title color */
+    opacity: 1;
+    transform: translateY(30px);
+}
+
+.section-header h1 { /* Specific override for .section-header */
+    color: rgb(20, 20, 20); /* As it was originally in climate-section context */
+}
+
+.section-title p, .section-header p { /* Combined for similar styling */
+    font-size: 1.2rem; /* Original .section-title p font-size */
+    color: #161515; /* Original .section-title p color */
+    opacity: 0.9; /* From .section-header p */
+    max-width: 900px;
+    padding-bottom: 50px; /* From .section-header p */
+    margin: 0 auto; /* From .section-header p */
+}
+
+/* Climate Impact Section */
+.climate-section {
+    padding: 4rem 0; /* Slightly adjusted padding for consistency */
+    background: linear-gradient(135deg, #9eade7 0%, #4bcea6 100%); /* Combined gradient */
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.climate-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.climate-stats, .climate-grid { /* Combined as both are grid layouts */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem; /* Max gap from .climate-stats */
+    text-align: center; /* From .climate-stats */
+    position: relative; /* From .climate-grid */
+    z-index: 2; /* From .climate-grid */
+}
+
+.climate-stat, .climate-card { /* Combined as both have similar initial animation properties */
+    opacity: 1;
+    transform: translateY(50px);
+}
+
+.climate-stat .big-number {
+    font-size: 4rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+    color: #FFD700;
+}
+
+.climate-stat h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.climate-stat p {
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.climate-card { /* Specific styles for .climate-card */
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    color: #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.climate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.climate-card .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+
+/* Specific icon backgrounds */
+.climate-card .icon.mountain { background: linear-gradient(135deg, #74b9ff, #0984e3); }
+.climate-card .icon.island { background: linear-gradient(135deg, #00b894, #00a085); }
+.climate-card .icon.polar { background: linear-gradient(135deg, #a29bfe, #6c5ce7); }
+.climate-card .icon.coral { background: linear-gradient(135deg, #fd79a8, #e84393); }
+.climate-card .icon.desert { background: linear-gradient(135deg, #7dca3e, #79a4db); }
+.climate-card .icon.weather { background: linear-gradient(135deg, #ff7675, #d63031); }
+
+.climate-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #2d3436;
+    font-weight: 600;
+}
+
+.climate-card p {
+    font-size: 0.95rem;
+    color: #636e72;
+    line-height: 1.6;
+}
+
+/* General Section and Grid Layout (Keep largely similar) */
+.destinations {
+    padding: 5rem 0;
+    background: #f8f9fa;
+}
+
+.destinations-section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: #2c5530;
+    margin-bottom: 0.8rem;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Adjusted minmax for better responsiveness */
+    gap: 2.5rem; /* Increased gap */
+    justify-content: center; /* Center items if they don't fill the row */
+}
+
+
+/* --- Destination Card (Adapted for Dropdown) --- */
+.destination-card {
+    background: white;
+    border-radius: 12px; /* Slightly smaller border-radius for modern look */
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Slightly adjusted shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.5s ease-out; /* Add height transition */
+    display: flex; /* Make it a flex container for header/details */
+    flex-direction: column; /* Stack header and details */
+    /* Remove original opacity/translateY for initial load if managing with JS later */
+    /* opacity: 0; */
+    /* transform: translateY(50px); */
+    cursor: default; /* Change cursor back to default as button handles click */
+    position: relative;
+}
+
+/* Remove hover transform on the card itself, as height change will be primary effect */
+.destination-card:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.destination-card::before { /* Top border */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px; /* Slightly thicker */
+    background: linear-gradient(90deg, #4CAF50, #8bc34a); /* Adjusted gradient */
+    opacity: 1; /* Always visible */
+    transition: all 0.3s ease;
+}
+
+/* Image styles remain largely the same, but remove the transform on card hover to avoid jumpiness */
+.destination-image {
+    height: 220px; /* Slightly reduced image height */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: all 0.3s ease; Keep this for potential inner effects if needed */
+}
+
+/* Remove this if you don't want the image to scale on card hover anymore */
+/* .destination-card:hover .destination-image {
+    transform: scale(1.03);
+} */
+
+.destination-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.destination-image .placeholder-icon {
+    font-size: 3.5rem; /* Larger icon */
+    color: rgba(255, 255, 255, 0.4); /* Slightly more visible */
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+.dest-img {
+    background-image: url('shaihills-tourists.png');
+}
+.dest-img:hover {
+    background-image: url('shai.jpeg');
+}
+
+.desti-img {
+   background-image: url('labadi.jpeg');
+}
+.desti-img:hover {
+   background-image: url('la.jpeg');
+}
+
+.destin-img {
+    background-image: url('yilo.jpeg');
+}
+.destin-img:hover {
+    background-image: url('boti-yilo.jpeg');
+}
+
+.destina-img {
+    background-image: url('Oboadaka-Falls-Aburi-Oboadaka-Eastern-Region-Ghana-TortoisePath.com1_-768x432.jpg');
+}
+.destina-img:hover {
+    background-image: url('aburi-gardens.jpeg');
+}
+
+.destinat-img {
+    background-image: url('bosomtwe.jpeg');
+}
+.destinat-img:hover{
+     background-image: url(lake-b.jpeg);
+}
+
+.destinate-img {
+     background-image: url('manhyia.jpeg');
+}
+.destinate-img:hover {
+     background-image: url('manhyia-mu.jpeg');
+}
+
+.destinati-img {
+    background-image: url('tinywow_width_299_82754914.jpg');
+}
+.destinati-img:hover {
+    background-image: url('kakum.jpeg');
+}
+
+.destinatio-img {
+    background-image: url('tinywow_liate_82739102.jpg');
+}
+.destinatio-img:hover {
+    background-image: url(tagbo.jpeg);
+}
+
+.destinatio-imag {
+    background-image: url('gonga.jpeg');
+}
+.destinatio-imag:hover {
+    background-image: url('mognori.jpeg');
+}
+.destination-card:hover .placeholder-icon {
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.eco-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(76, 175, 80, 0.95); /* Slightly less transparent */
+    color: white;
+    padding: 7px 14px; /* Slightly larger badge */
+    border-radius: 25px; /* More rounded */
+    font-size: 0.85rem; /* Slightly larger text */
+    font-weight: 600;
+    backdrop-filter: blur(8px); /* Slightly less blur */
+    z-index: 3;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* --- Card Header (Visible Part) --- */
+.destination-header {
+    padding: 25px; /* Consistent padding */
+    text-align: center;
+    background-color: #fff; /* Ensure it's white */
+    border-bottom: 1px solid #eee; /* Light separator */
+}
+
+.destination-title {
+    font-size: 1.55rem; /* Slightly larger */
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: #2c5530;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.destination-description {
+    font-size: 0.95rem; /* Slightly larger text */
+    color: #6c757d;
+    line-height: 1.6;
+    text-align: center; /* Center align description */
+    margin-bottom: 1.5rem;
+}
+
+.carbon-info { /* Existing styles for this block */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the carbon info */
+    gap: 0.8rem; /* Slightly smaller gap */
+    margin-bottom: 1.5rem;
+}
+
+.carbon-info i {
+    color: #4CAF50;
+    font-size: 1.1rem;
+}
+
+.carbon-info span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.destination-features { /* For the feature tags in airport cards */
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the tags */
+    gap: 0.6rem;
+    margin-bottom: 1.5rem; /* Ensure space below tags before button */
+}
+
+.feature-tag {
+    background: rgba(76, 175, 80, 0.15); /* Slightly darker background */
+    color: #388e3c; /* Darker green text */
+    padding: 5px 10px; /* Slightly larger padding */
+    border-radius: 15px; /* More rounded */
+    font-size: 0.8rem; /* Slightly larger */
+    font-weight: 600;
+}
+
+/* --- Buttons --- */
+.btn { /* General button styles */
+    display: inline-block;
+    padding: 12px 28px; /* Larger buttons */
+    border-radius: 30px; /* More rounded */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem; /* Consistent font size */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.35);
+}
+
+.btn-secondary { /* Style for the "Show Less" button */
+    background-color: #6c757d;
+    color: white;
+    margin-top: 20px; /* Space from content above */
+    box-shadow: 0 3px 10px rgba(108, 117, 125, 0.2);
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(108, 117, 125, 0.3);
+}
+
+/* --- Destination Details (Hidden/Expanded Content) --- */
+.destination-details {
+    max-height: 0; /* Initially hidden */
+    overflow: hidden; /* Crucial for hiding content and animation */
+    transition: max-height 0.6s ease-in-out, padding 0.6s ease-in-out; /* Smooth transition for expand/collapse */
+    padding: 0 25px; /* No vertical padding when collapsed */
+    background-color: #fcfcfc; /* Slightly different background for detail section */
+    color: #444;
+}
+
+.destination-details.expanded {
+    max-height: 800px; /* A large enough value to accommodate all content. JS will refine this. */
+    padding: 25px; /* Apply padding when expanded */
+    overflow-y: auto; /* Enable scrolling if content is too long */
+}
+
+.destination-details h4 {
+    font-size: 1.25rem;
+    color: #28a745; /* Green for subheadings */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.destination-details ul {
+    list-style: disc inside;
+    padding-left: 0;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.destination-details ul li {
+    margin-bottom: 5px;
+}
+
+.destination-details p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 768px) {
+    .destinations-grid {
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+}
+
+/* Button visibility logic */
+.destination-card .close-details-button,
+.destination-card.expanded .learn-more-button {
+    display: none; /* Hide close button by default, and learn more button when expanded */
+}
+
+.destination-card.expanded .close-details-button {
+    display: block; /* Show close button when expanded */
+    margin: 20px auto 0 auto; /* Center the button below content */
+}
+
+/* Calculator Section */
+.calculator {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #2c5530 0%, #4CAF50 100%);
+    color: white;
+}
+
+.calculator-main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.calculator-form {
+    background: rgba(255, 255, 255, 0.199);
+    padding: 3rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    margin-top: 2rem;
+    opacity: 1;
+    transform: translateY(50px);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgba(41, 40, 40, 0.9);
+}
+
+.calculate-btn {
+    background: #FFD700;
+    color: #2c5530;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.calculate-btn:hover {
+    background: #FFC107;
+    transform: translateY(-2px);
+}
+
+.result {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    display: none;
+}
+
+/* Sustainable Travel Section */
+.sustainable-section {
+    padding: 4rem 0;
+    background: white;
+}
+
+.sustainable-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    opacity: 1;
+    transform: translateY(30px);
+}
+
+.sustainable-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #2d3436;
+    font-weight: 700;
+}
+
+.sustainable-header .emoji {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+}
+
+.sustainable-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.sustainable-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: translateY(50px);
+    border: 1px solid #e9ecef;
+    position: relative;
+    overflow: hidden;
+}
+
+.sustainable-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4CAF50, #45a049);
+}
+
+.sustainable-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
+.sustainable-card .icon-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    position: relative;
+    color: white; /* Moved common color here */
+}
+
+/* Specific icon-container backgrounds */
+.sustainable-card .icon-container.environmental { background: linear-gradient(135deg, #4CAF50, #45a049); }
+.sustainable-card .icon-container.community { background: linear-gradient(135deg, #FF9800, #F57C00); }
+.sustainable-card .icon-container.authentic { background: linear-gradient(135deg, #9C27B0, #7B1FA2); }
+
+.sustainable-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: #2d3436;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sustainable-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sustainable-card li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #636e72;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.sustainable-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Tips Section */
+.tips-section { /* Added a class for the entire section for better organization */
+    padding: 4rem 0; /* Consistent padding with other sections */
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tip-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left;
+}
+
+.tip-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tip-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f9ff;
+    border-radius: 8px;
+}
+
+.tip-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.75rem;
+}
+
+.tip-description {
+    font-size: 0.9rem;
+    color: #4a5568;
+    line-height: 1.5;
+}
+
+.icon { /* General icon style, used for .tip-icon content */
+    width: 24px;
+    height: 24px;
+    fill: #3182ce;
+}
+
+/* Bottom Subscription Section */
+.bottom-subscription {
+    background: linear-gradient(135deg, #a7f3d0 0%, #6ee7b7 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.subscription-content-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.bottom-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.hero-description { /* This class name seems reused from .hero p, consider renaming if it's not strictly a hero description */
+    font-size: 1.1rem;
+    color: #374151;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.subscription-form {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+}
+
+.email-input {
+    flex: 1;
+    padding: 0.875rem 1rem;
+    border: 2px solid #d1d5db;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+    border-color: #10b981;
+}
+
+.email-input.error {
+    border-color: #ef4444;
+}
+
+.subscribe-btn {
+    padding: 0.875rem 1.5rem;
+    background: #10b981;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.subscribe-btn:hover {
+    background: #059669;
+    transform: translateY(-1px);
+}
+
+.subscribe-btn:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.community-count {
+    font-size: 0.95rem;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.message {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 500;
+    display: none;
+}
+
+.message.success {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.message.error {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+/* Footer Section */
+footer { /* Renamed from .footer for semantic HTML */
+    background: #2c5530; /* Original color from first part */
+    color: white; /* Original color from first part */
+    padding: 3rem 0 1rem; /* Original padding from first part */
+}
+
+.footer-sections-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Combined for flexibility */
+    gap: 2rem;
+    margin-bottom: 2rem; /* Original margin */
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    color: #4CAF50; /* Original color from first part */
+    font-size: 1.1rem; /* From second part */
+    font-weight: 600; /* From second part */
+}
+
+.footer-section p,
+.footer-section li {
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section a {
+    color: #ccc; /* Original color from first part */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem; /* From second part */
+}
+
+.footer-section a:hover {
+    color: #4CAF50;
+}
+
+.footer-logo { /* New from second part */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.logo-icon { /* New from second part */
+    width: 32px;
+    height: 32px;
+    background: #10b981;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.logo-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.footer-description { /* New from second part */
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.quick-links { /* New from second part */
+    list-style: none;
+}
+
+.quick-links li { /* New from second part */
+    margin-bottom: 0.5rem;
+}
+
+.quick-links a { /* New from second part */
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.quick-links a:hover { /* New from second part */
+    color: #10b981;
+}
+
+.newsletter-form { /* New from second part */
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.newsletter-input { /* New from second part */
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #4b5563;
+    border-radius: 6px;
+    background: #374151;
+    color: #f9fafb;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.newsletter-input:focus { /* New from second part */
+    border-color: #10b981;
+}
+
+.newsletter-btn { /* New from second part */
+    padding: 0.75rem 1rem;
+    background: #10b981;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-btn:hover { /* New from second part */
+    background: #059669;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #4CAF50; /* Original color */
+    opacity: 0.8; /* Original opacity */
+    margin: 2rem auto 0; /* From second part, adjusted to use auto for centering */
+    display: flex; /* From second part */
+    justify-content: space-between; /* From second part */
+    align-items: center; /* From second part */
+    font-size: 0.85rem; /* From second part */
+    color: #9ca3af; /* From second part */
+}
+
+.footer-links { /* New from second part */
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-links a { /* New from second part */
+    color: #9ca3af;
+    text-decoration: none;
+}
+
+.footer-links a:hover { /* New from second part */
+    color: #10b981;
+}
+
+/* View All Button */
+.view-all-container { /* New from second part */
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.view-all-btn { /* New from second part */
+    display: inline-block;
+    background: linear-gradient(135deg, #26a69a, #00897b);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(38, 166, 154, 0.3);
+}
+
+.view-all-btn:hover { /* New from second part */
+    background: linear-gradient(135deg, #00897b, #00695c);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(38, 166, 154, 0.4);
+}
+
+.view-all-btn:active { /* New from second part */
+    transform: translateY(-1px);
+}
+
+/* Loading Animation */
+.loading-dots { /* New from second part */
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.loading-dots::after { /* New from second part */
+    content: '';
+    animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots { /* New from second part */
+    0%, 20% { content: ''; }
+    40% { content: '.'; }
+    60% { content: '..'; }
+    80%, 100% { content: '...'; }
+}
+
+.loading-overlay { /* New from second part */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loading-spinner { /* New from second part */
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin { /* New from second part */
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hidden { /* New from second part */
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Scroll Progress Bar */
+.progress-bar { /* New from second part */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(90deg, #4CAF50, #45a049);
+    z-index: 1000;
+    transition: width 0.1s ease;
+}
+
+/* Animation Classes */
+.fade-in-up {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.fade-in {
+    opacity: 1 !important;
+}
+
+/* Animation Keyframes */
+@keyframes pulse { /* Combined from two pulse definitions */
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); } /* Using 1.05 for a softer pulse */
+}
+
+@keyframes shimmer {
+    0% { background-position: -200px 0; }
+    100% { background-position: calc(200px + 100%) 0; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #home {
+        padding-top: 300px; /* Reduced padding for smaller screens */
+        padding-bottom: 100px; /* Reduced padding for smaller screens */    
+        margin-bottom: 100px;   
+    }
+    #home  .h-land-para h1{
+        font-size: 1.2rem;
+        
+    }
+
+    #home .h-land-para p {
+        font-size: 0.9rem;
+    }
+    .nav-class-cont {
+        padding: 0 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    
+
+    .stats-container {
+        grid-template-columns: 1fr;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 110px;
+    }
+.stat-item {
+    width: 400px;
+    height: 150px;
+}
+    .main-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .climate-stats, .climate-grid, .sustainable-grid, .tips-grid { /* Combined common grid adjustments */
+        grid-template-columns: 1fr;
+        gap: 1.5rem; /* Standardized gap */
+    }
+
+    .climate-stat .big-number {
+        font-size: 3rem;
+    }
+
+    .climate-card, .sustainable-card, .tip-card { /* Combined common padding adjustments */
+        padding: 1.5rem;
+    }
+
+    .sustainable-card .icon-container {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+
+    .section-header h1, .sustainable-header h2 { /* Combined similar title adjustments */
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .destination-card {
+        margin: 0 0.5rem;
+    }
+
+    .destination-image {
+        height: 180px;
+    }
+
+    .destination-content {
+        padding: 1.25rem;
+    }
+
+    .bottom-title {
+        font-size: 2rem;
+    }
+
+    .subscription-form {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-sections-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .nav-class-cont,
+    .h-land-para,
+    .climate-impact-container,
+    .climate-cards-container,
+    .destinations-section-container,
+    .all-destinations-container,
+    .calculator-main-container,
+    .tips-main-container,
+    .sustainable-content-container,
+    .subscription-content-container,
+    .footer-sections-container {
+        padding: 1.5rem 1rem; /* Adjusted for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+            .nav-menu {
+                display: none; /* Hide desktop menu by default on mobile */
+                flex-direction: column;
+                position: absolute;
+                top: 4.5rem; /* Adjusted based on new header height */
+                left: 0;
+                width: 100%;
+                background-color: #f0fdf4;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                z-index: 999; /* Slightly lower than header but above content */
+                padding: 1rem 0;
+            }
+
+            .nav-menu.active {
+                display: flex; /* Show menu when active */
+            }
+
+            .nav-menu li {
+                width: 100%;
+                text-align: center;
+                padding: 0.5rem 0;
+            }
+
+            .mobile-menu-toggle {
+                display: block; /* Show toggle button on mobile */
+            }
+
+            /* Adjust nav-class-cont for mobile to ensure toggle is visible */
+            .nav-class-cont {
+                justify-content: space-between;
+            }
+        }

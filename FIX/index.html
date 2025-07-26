@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Travel Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS CDN for basic styling and responsiveness -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for the mobile menu icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header and Navigation Bar -->
+    <header id="top-header">
+        <div class="nav-class-cont">
+            <div class="page-logo">
+                <i class="fas fa-leaf"></i>
+                EcoTravel
+            </div>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#Home" class="rounded-md px-3 py-2">HOME</a></li>
+                    <li><a href="#Climate" class="rounded-md px-3 py-2">CLIMATE IMPACT</a></li>
+                    <li><a href="#Destinations" class="rounded-md px-3 py-2">DESTINATIONS</a></li>
+                    <li><a href="#Calculator" class="rounded-md px-3 py-2">CARBON CALCULATOR</a></li>
+                    <li><a href="#Tips" class="rounded-md px-3 py-2">SUSTAINABLE TIPS</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <section class="landing-part" id="Home">
+        <div class="h-land-para">
+            <h1>Discover the World, Preserve Its Beauty</h1>
+            <p>Embark on sustainable travel adventures that protect our planet while creating unforgettable memories. Join thousands of eco-conscious travelers making a difference.</p>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number" ><h1>127K</h1></span>
+                    <div class="stat-label">sustainable travelers joined</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">43K</span>
+                    <div class="stat-label">Trees Planted</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">856K</span>
+                    <div class="stat-label">Tons CO2 Saved</div>
+                </div>
+            </div>
+
+            <div class="landing-part-buttons">
+                <a href="#Destinations" class="land-btn land-1st-btn">Explore Destinations</a>
+                <a href="#Calculator" class="land-btn land-2nd-btn">Calculate Footprint</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="climate-section" id="Climate">
+        <div class="climate-impact-container">
+            <div class="climate-stats">
+                <div class="climate-stat">
+                    <span class="big-number">8%</span>
+                    <h3>Global Carbon Impact</h3>
+                    <p>of global carbon CO2 emissions come from tourism. By choosing sustainable travel options, we can significantly reduce this impact.</p>
+                </div>
+                <div class="climate-stat">
+                    <span class="big-number">1.1°C</span>
+                    <h3>Temperature Rise</h3>
+                    <p>global temperature rise since pre-industrial times. Every degree matters for our planet's future and biodiversity.</p>
+                </div>
+                <div class="climate-stat">
+                    <span class="big-number">15cm</span>
+                    <h3>Sea Level Rise</h3>
+                    <p>sea level rise in the last century. Coastal destinations we love are at risk without immediate climate action.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="climate-section" id="Impacts">
+        <div class="climate-cards-container">
+            <div class="section-header">
+                <h1>Climate Impacts</h1>
+                <p>Understanding how our changing climate affects the world's most precious travel destinations</p>
+            </div>
+            <div class="climate-grid">
+                <div class="climate-card">
+                    <div class="icon mountain">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Increased Temperatures and Heat Stress</h3>
+                    <p> Ghana is experiencing rising temperatures, with projections indicating further increases. This leads to increased heat stress, impacting human health (especially vulnerable populations like the elderly and children), labor productivity in manual work (like agriculture and mining).</p>
+                </div>
+                <div class="climate-card">
+                    <div class="icon island">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Sea-Level Rise and Coastal Erosion</h3>
+                    <p> Ghana's coastline is experiencing a significant rise in sea levels, leading to increased coastal erosion. This threatens coastal communities, infrastructure, agricultural land (due to salinization), and ecosystems, forcing some residents to relocate. </p>
+                </div>
+                <div class="climate-card">
+                    <div class="icon polar">
+                        <i class="fa-solid fa-cloud-rain"></i>
+                    </div>
+                    <h3>Changes in Rainfall Patterns and Water Scarcity</h3>
+                    <p> Rainfall patterns are becoming erratic, with predictions of more intense downpours leading to floods, alongside longer dry periods and droughts. This variability affects water security for drinking, sanitation, and hydropower production (which accounts for a significant portion of Ghana's electricity).</p>
+                </div>
+                <div class="climate-card">
+                    <div class="icon coral">
+                        <i class="fas fa-fish"></i>
+                    </div>
+                    <h3>Impacts on Agriculture and Food Security</h3>
+                    <p>A large portion of Ghana's workforce depends on rain-fed agriculture, making it highly vulnerable to climate change. Rising temperatures and erratic rainfall reduce crop yields (e.g., maize, cassava), increase pest attacks, and lead to land degradation and desertification.</p>
+                </div>
+                <div class="climate-card">
+                    <div class="icon desert">
+                        <i class="fa-solid fa-staff-snake"></i>
+                    </div>
+                    <h3>Health Impacts</h3>
+                    <p>Climate change exacerbates various health issues in Ghana. This includes an increase in vector-borne diseases (like malaria and dengue fever) due to altered water conditions, and waterborne diseases (like cholera and diarrheal diseases) linked to flooding.</p>
+                </div>
+                <div class="climate-card">
+                    <div class="icon weather">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Extreme Weather</h3>
+                    <p>Both inland and coastal areas are highly susceptible to flooding. Intense and erratic rainfall leads to riverine and urban flooding, while sea-level rise exacerbates coastal flooding and erosion. Floods cause displacement, damage to infrastructure (homes, roads, schools), disruption of livelihoods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sustainable-section">
+        <div class="sustainable-content-container">
+            <div class="sustainable-header">
+                <h2>Why Choose Sustainable Travel<span class="emoji">🌱</span>?</h2>
+            </div>
+            <div class="sustainable-grid">
+                <div class="sustainable-card">
+                    <div class="icon-container environmental">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>Reduce Environmental Impact</h3>
+                    <ul>
+                        <li>Minimize your carbon footprint with eco-friendly transportation</li>
+                        <li>Support renewable energy and sustainable accommodations</li>
+                        <li>Help protect natural habitats and reduce pollution</li>
+                        <li>Contribute to conservation efforts and wildlife protection</li>
+                    </ul>
+                </div>
+                <div class="sustainable-card">
+                    <div class="icon-container community">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Support Local Communities</h3>
+                    <ul>
+                        <li>Your travel spending directly benefits local economies and helps preserve cultural traditions</li>
+                        <li>Support fair wages and working conditions for local guides and service providers</li>
+                        <li>Preserve cultural heritage and traditional practices</li>
+                        <li>Empower local communities through tourism revenue</li>
+                    </ul>
+                </div>
+                <div class="sustainable-card">
+                    <div class="icon-container authentic">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Authentic Experiences</h3>
+                    <ul>
+                        <li>Connect more deeply with your destination through sustainable activities and meaningful interactions</li>
+                        <li>Experience genuine local culture and traditions</li>
+                        <li>Create lasting memories through responsible travel practices</li>
+                        <li>Gain deeper understanding of environmental and social issues</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="destinations" id="Destinations">
+    <div class="destinations-section-container">
+        <div class="section-title">
+            <h2>Sustainable Destinations</h2>
+            <p>Explore breathtaking locations committed to environmental conservation</p>
+        </div>
+        <div class="destinations-grid">
+
+            <div class="destination-card">
+                <div class="destination-image dest-img" >
+                    <div class="eco-badge">Eco Certified</div>
+                </div>
+                <div class="destination-header"> <h3 class="destination-title">SHAI HILLS(Greater Accra)</h3>
+                    <p class="destination-description">Experience pristine wilderness. It's about 45 minutes from Accra and offers stunning views of the Accra Plains.</p>
+                    <div class="carbon-info">
+                        <i class="fas fa-leaf"></i>
+                        <span>Carbon neutral travel place</span>
+                    </div>
+                    <button class="btn btn-primary learn-more-button">Learn More</button> </div>
+                <div class="destination-details"> <h4>Shai Hills Resource Reserve:</h4>
+                    <ul>
+                        <li>Located near Accra.</li>
+                        <li>A reserve with rocky hills and scenic views.</li>
+                        <li>Has expansive grasslands.</li>
+                        <li>Wildlife such as baboons, monkeys, and antelopes.</li>
+                    </ul>
+                    <ul>
+                        <h1>Hotels Around</h1>
+                        <li><a href="https://www.booking.com/landmark/gh/shai-hills-resource-reserve-t4.en.html?aid=314919;label=shai-hills-resource-reserve-t4-mOhHbkUiQL0vFXpMTVFE*wS625091142928:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-1510596434129:lp9067654:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YfOICo1LOVmejEBpLq7NOGI;ws=&gad_source=1&gad_campaignid=57961994&gbraid=0AAAAAD_Ls1IjkRWhSSLgrn9vt0PRQ_huI&gclid=CjwKCAjw1ozEBhAdEiwAn9qbzcuHrnYu71Nj9CmIb3JNYpltNqzbwGoSWDo04swi5q_upESZOx5KHBoCPogQAvD_BwE" target="_blank">Shai hills hotel</a></li>
+                        <li><a href="https://rbpark-hillhotel.com/" target="_blank">RB Parkhill Hotel Ghana</a></li>
+                        <li><a href="https://accruase.com/" target="_blank">Accruase Paradise</a></li>
+                    
+                    </ul>
+                    <p>Visitors are encouraged to explore by hiking, kayaking, or cycling to minimize environmental impact.</p>
+                    <button class="btn btn-secondary close-details-button">Show Less</button> </div>
+            </div>
+
+            <div class="destination-card">
+                <div class="destination-image desti-img">
+                    <div class="eco-badge">Green Certified</div>
+                </div>
+                <div class="destination-header"> <h3 class="destination-title">LA(Greater Accra)</h3>
+                    <p class="destination-description">Labadi, also known as La, is a Peri-urban town in La Dade Kotopon Municipal District in the Greater Accra Region of Ghana.</p>
+                    <div class="carbon-info">
+                        <i class="fa-solid fa-recycle"></i>
+                        <span>Concerned about waste management</span>
+                    </div>
+                    <button class="btn btn-primary learn-more-button">Learn More</button> </div>
+                <div class="destination-details"> <h4>Labadi Beach(La Pleasure Beach):</h4>
+                    <ul>
+                        <li> These beaches are situated on the outskirts of Accra.</li>
+                        <li>Lively sun-drenched beaches with white sand.</li>
+                        <li>It is ideal for relaxation and people-watching.</li>
+                        <li>You can enjoy musical performances, cultural drumming and dancing, particularly on weekends. </li>
+                    </ul>
+                    <ul>
+                        <h1>Hotels Around</h1>
+                        <li><a href="https://hoteldezews.com/" target="_blank">Hotel De Zews</a></li>
+                        <li><a href="https://www.afrokanhotel.com/" target="_blank">Afrokan Hotel</a></li>
+                        <li><a href="https://www.booking.com/hotel/gh/aduk-guesthouse.en-gb.html?aid=311984&label=aduk-guesthouse-vZzU_u9TkUze9odz8raCiQS675508736051%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2272520144811%3Alp9067654%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YXdX6HrtnYy-Ml68sH-ljtU&sid=137e3b1e56243637bd4a95d11074a1b8&dest_id=-2077822&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&map=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1753483144&srpvid=23279f34c3a1091e&type=total&ucfs=1&#map_opened-auto_open" target="_blank">Aduk Guest House</a></li>
+                    </ul>
+                    <p>Your visit directly contributes to the protection of its unparalleled natural beauty.</p>
+                    <button class="btn btn-secondary close-details-button">Show Less</button> </div>
+            </div>
+
+            <div class="destination-card">
+                <div class="destination-image destin-img">
+                    <div class="eco-badge">Sustainable</div>
+                </div>
+                <div class="destination-header"> <h3 class="destination-title">YILO KROBO
+(Eastern Region)</h3>
+                    <p class="destination-description">Yilo Krobo Municipal District is one of the thirty-three districts in Eastern Region, Ghana. The Yilo Krobo Municipality climate change, particularly affect farmers through increased temperatures, flooding, and soil erosion.</p>
+                    <div class="carbon-info">
+                        <i class="fa-solid fa-tree"></i>
+                        <span>Prioritize afforestation</span>
+                    </div>
+                    <button class="btn btn-primary learn-more-button">Learn More</button> </div>
+                <div class="destination-details"> <h4>BOTI FALLS</h4>
+                    <ul>
+                        <li>A twin waterfall located at Boti in Yilo Krobo District.</li>
+                        <li>a rainbow is formed when they merge.</li>
+                        <li>The surrounding forest reserve offers guided tours.</li>
+                        <li>Opportunities to explore the umbrella rock and three-headed palm tree.</li>
+                    </ul>
+                    <ul>
+                        <h1>Hotels Around</h1>
+                         <li><a href="https://www.hotelsgh.com/hotel/bedtime-hotel#google_vignette" target="_blank">Bedtime Hotel</a></li>  
+                         <li><a href="https://www.booking.com/hotel/gh/dexxy-39-s-palace.en-gb.html?aid=311984&label=dexxy-39-s-palace-a2unMUITu1C1boTimSoWqwS675415887573%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2394487743358%3Alp9067654%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YTQUGSsRwx9_3qo3uPTHyoo&sid=137e3b1e56243637bd4a95d11074a1b8&dest_id=-2074535&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1753483474&srpvid=f07e9fe679580368&type=total&ucfs=1&" target="_blank">Dexxy's Palace Hotel</a></li>   
+                    </ul>
+                    <p>New Zealand's commitment to kaitiakitanga (guardianship) ensures a truly responsible journey.</p>
+                    <button class="btn btn-secondary close-details-button">Show Less</button> </div>
+            </div>
+
+            <div class="destination-card" data-destination="gloucester">
+                <div class="destination-image destina-img">
+                    <div class="eco-badge">Certified Green</div>
+                    
+                </div>
+                <div class="destination-header">
+                    <h3 class="destination-title">Akuapem(Eastern Region)</h3>
+                    <p class="destination-description">Akuapem refers to an Akan ethnic group and their associated language and state in Ghana. They reside in the Akuapem Hills in the Eastern Region of Ghana. Smallholder farmers experience increased vulnerability due to shifts in rainfall patterns and extreme weather events</p>
+                    <div class="destination-features">
+                        <span class="feature-tag">Afforestation</span>
+                        <span class="feature-tag">Water Conservation</span>
+                        <span class="feature-tag">Waste management</span>
+                    </div>
+                    <button class="btn btn-primary learn-more-button">Learn More</button>
+                </div>
+                <div class="destination-details">
+                    <h4>ABURI BOTANICAL 
+GARDEN:</h4>
+                    <p>The Garden occupies an area of 64.8 hectares.[1] It was opened in March 1890 and was founded by Governor William Brandford-Griffith and Dr. John Farrell Easmon, a Sierra Leonean medical doctor. Located 30 km north of Accra on the Akuapem hills.</p>
+                    <ul>
+                        <li>Teaching scientific methods of agriculture.</li>
+                        <li>Home to various species of birds.</li>
+                        <li> Fight to save plant diversity through research, growing.</li>
+                        <li> A serene environment with a rich collection of tropical flora.</li>
+                    </ul>
+                    <ul>
+                        <h1>Hotels Around</h1>
+                        <li><a href="https://codedguesthouse.com/" target="_blank">Coded Guest House</a></li>
+                        <li><a href="https://www.hotels.com/ho716082784/highlander-guest-house-aburi-ghana/?locale=en_GB&pos=HCOM_ME&siteid=310000033" target="_blank">Highlander Guest House</a></li>
+                        <li><a href="https://www.hotels.com/ho590774/sweet-mother-eco-resort-aburi-ghana/" target="_blank">Sweet Mother Eco-Resort</a></li>
+                    </ul>
+                    <button class="btn btn-secondary close-details-button">Show Less</button>
+                </div>
+            </div>
+             <div class="destination-card" data-destination="gloucester">
+                <div class="destination-image destinat-img">
+                    <div class="eco-badge">Certified Green</div>
+                     
+                </div>
+                <div class="destination-header">
+                    <h3 class="destination-title">BOSOMTWE DISTRICT
+(Ashanti Region)</h3>
+                    <p class="destination-description">Bosomtwe District is one of the 43 districts in Ashanti Region, Ghana. Climate change poses significant threats to the Bosomtwe District, particularly impacting the iconic Lake Bosomtwe, which is experiencing a drying trend due to changing rainfall patterns and human activities like land use change</p>
+                    <div class="destination-features">
+                        <span class="feature-tag">Sustainable agricultural practices</span>
+                        <span class="feature-tag">Public Education</span>
+                        <span class="feature-tag">Waste Management</span>
+                    </div>
+                    <button class="btn btn-primary learn-more-button">Learn More</button>
+                </div>
+                <div class="destination-details">
+                    <h4>LAKE BOSOMTWE:</h4>
+                    <p>Lake Bosomtwe[3] is the only natural lake in Ghana. There are about 30 villages near the crater lake of Lake Bosomtwe.  It's a sacred site for the Ashanti people and a popular destination for eco-tourism.</p>
+                    <ul>
+                        <li>Formed by a meteorite impact.</li>
+                        <li>Offer boating, fishing, and hiking opportunities.</li>
+                        <li>Each village around the lake has its own shrine or sacred grove.</li>
+                        <li>An important spot is the Abrodwum Stone.</li>
+                    </ul>
+                    <ul>
+                        <h1>Hotels Around</h1>
+                         <li><a href="https://lakebosomtweparadise.com/" target="_blank">Lake Bosomtwe Paradise</a></li>
+                         <li><a href="https://www.trip.com/hotels/kumasi-metropolitan-hotel-detail-10538459/golden-home-touch-hotel/" target="_blank">Golden Home Touch Hotel</a></li>
+                         <li><a href="https://okumahhotels.com/kumasi/" target="_blank">Okumah Hotel</a></li>
+                    </ul>
+                    <button class="btn btn-secondary close-details-button">Show Less</button>
+                </div>
+            </div>
+             <div class="destination-card" data-destination="gloucester">
+                <div class="destination-image destinate-img">
+                    <div class="eco-badge">Certified Green</div>
+                    
+                </div>
+                <div class="destination-header">
+                    <h3 class="destination-title">MANHYIA (KUMASI Ashanti Region)</h3>
+                    <p class="destination-description">Manhyia is located within the Kumasi Metropolitan District of the Ashanti Region of Ghana.  The area is also known for the Manhyia Palace, the seat of the Asantehene, which is also located in Kumasi. Issues of rising temperatures, rainfall variability, extreme weather.</p>
+                    <div class="destination-features">
+                        <span class="feature-tag">Waste Management</span>
+                        <span class="feature-tag">Water Conservation</span>
+                        <span class="feature-tag">Afforestation</span>
+                    </div>
+                    <button class="btn btn-primary learn-more-button">Learn More</button>
+                </div>
+                <div class="destination-details">
+                    <h4>MANHYIA PALACE MUSEUM:</h4>
+                    <p>A historical museum located in Kumasi, situated within the Manhyia Palace. First established in 1925 as a private residence for Asantehene Agyeman Prempeh I (who had been returning from almost three decades of exile), the Museum currently provides fair insight into the culture of Ashantiland and Ghana's cultural legacy from before its colonization by Great Britain.</p>
+                    <ul>
+                        <li>The Manhyia Palace (Akan: Oman hyia, English: Gathering of the people).</li>
+                        <li> features video presentations and key historical items pertaining to Ashantiland and Ghana's ancestry.</li>
+                        <li>Silver Jubilee celebrations of the ascension of the stool of Otumfuo Osei Tutu II.</li>
+                        <li> It was rehabilitated in 1995 at about 12,000 cedis and subsequently reopened.</li>
+                    </ul>
+                    <ul>
+                        <h1>Hotels Around</h1>
+                        <li><a href="https://labevhotel.com/" target="_blank"></a>Labev Hotel</li>
+                        <li><a href="https://www.goldplazahotelgh.com/" target="_blank">Gold Plaza Hotel</a></li>
+                        <li><a href="https://lancasterkumasicity.com/" target="_blank">Lacanster Kumasi City Hotel</a></li>
+                    </ul>
+                    <button class="btn btn-secondary close-details-button">Show Less</button>
+                </div>
+            </div>
+             <div class="destination-card">
+                <div class="destination-image destinati-img">
+                    <div class="eco-badge">Eco Certified</div>
+                </div>
+                <div class="destination-header"> <h3 class="destination-title">Twifo Hemang</h3>
+                    <p class="destination-description">Is a former district that was located in Central Region, Ghana. Originally created as an ordinary district assembly in 1988. It is experiencing the effects of climate change, particularly deforestation and altered weather patterns impacting agriculture. The district's natural environment has been degraded due to human activities and climate change, leading to changes in rainfall and temperature.</p>
+                    <div class="carbon-info">
+                        <i class="fa-solid fa-tree"></i>
+                        <span>Prioritize afforestation</span>
+                    </div>
+                    <button class="btn btn-primary learn-more-button">Learn More</button> </div>
+                <div class="destination-details"> <h4>Kakum National Park:</h4>
+                    <ul>
+                        <li>Located in the coastal environs of the Central Region Twifo Hemang of Ghana,</li>
+                        <li>Covers an area of 375 square kilometres (145 sq mi).</li>
+                        <li>It was gazetted as a national park only in 1992 after an initial survey of avifauna was conducted</li>
+                        <li> It is one of only 3 locations in Africa with a canopy walkway, which is 350 metres (1,150 ft) long and connects seven tree tops.</li>
+                    </ul>
+                    <ul>
+                        <h1>Hotels Around</h1>
+                        <li><a href="https://mamaleelodge.com/" target="_blank">Mama Lee's Lodge</a></li>
+                        <li><a href="https://rainforesthotelghana.com/" target="_blank">Rain Forest Lodge</a></li>
+                        <li><a href="https://artandleisureeb.com/" target="_blank">Art and Leisure EB Hotel</a></li>
+                    </ul>
+                    <p>Visitors are encouraged to explore by hiking or walking, to minimize environmental impact.</p>
+                    <button class="btn btn-secondary close-details-button">Show Less</button> </div>
+            </div>
+ <div class="destination-card">
+                <div class="destination-image destinatio-img">
+                    <div class="eco-badge">Eco Certified</div>
+                </div>
+                <div class="destination-header"> <h3 class="destination-title"> Liati Wote</h3>
+                    <p class="destination-description">Is a rural village and a popular community-based tourism destination located in the green Volta Region of Ghana. The village is situated at the foot of Ghana’s highest peak Mt. Afadjato. Experiences a tropical savanna climate with distinct wet and dry season and a nature-centered adventure and comfortability.</p>
+                    <div class="carbon-info">
+                        <i class="fas fa-leaf"></i>
+                        <span>Carbon neutral travel options available</span>
+                    </div>
+                    <button class="btn btn-primary learn-more-button">Learn More</button> </div>
+                <div class="destination-details"> <h4> The Tagbo Falls Lodge:</h4>
+                    <ul>
+                        <li>Situated in Liati Wote, this lodge is near the Tagbo Waterfalls and Mount Afadjato.</li>
+                        <li> It offers comfortable rooms, delicious meals prepared with local ingredients.</li>
+                        <li> Opportunities for hiking and nature exploration.</li>
+                        <li>Liati Wote is a rural village and a popular 'community-based' tourism destination.</li>
+                    </ul>
+                    <ul>
+                        <h1>Hotels Around</h1>
+                        <li><a href="https://www.booking.com/hotel/gh/wli-waterfall-inn.en-gb.html?aid=311984&label=wli-waterfall-inn-ym1HS9in49pdVELYsvZvhQS261110724373%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-981211134201%3Alp9077308%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YXwxhKG0pUU-mcMVT-JwQpc&sid=137e3b1e56243637bd4a95d11074a1b8&dest_id=-2068330&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1753484784&srpvid=4cfaa275e8c801c6&type=total&ucfs=1&" target="_blank">Wli Waterfall Inn</a></li>
+                        <li><a href="https://www.booking.com/hotel/gh/wli-water-heights.en-gb.html?aid=356980&label=gog235jc-10CAsoVUIRd2xpLXdhdGVyLWhlaWdodHNIM1gDaFWIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsuckMQGwAIB0gIkMTI3ZTQ2YTktOTEyYi00NmYzLWJlMTItYWIxMDg0NTk4YjIy2AIB4AIB&sid=137e3b1e56243637bd4a95d11074a1b8&dest_id=-2068330&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1753484880&srpvid=7a62a2a68d7600a0&type=total&ucfs=1&" target="_blank">Wli Water Heights Hotel</a></li>
+                        <li><a href="https://kikiscourt.com/" target="_blank">Kikis Court</a></li>
+                    </ul>
+                    <p>Visitors are encouraged to explore by hiking or cycling to minimize environmental impact.</p>
+                    <button class="btn btn-secondary close-details-button">Show Less</button> </div>
+            </div>
+ <div class="destination-card">
+                <div class="destination-image destinatio-imag">
+                    <div class="eco-badge">Eco Certified</div>
+                </div>
+                <div class="destination-header"> <h3 class="destination-title">West Gonja District(SAVANNAH REGION)</h3>
+                    <p class="destination-description">West Gonja Municipal Assembly is one of the seven districts in Savannah Region, Ghana.Originally created as an ordinary district assembly on 23 December 1988. Experiences a tropical climate characterized by high temperatures and a unimodal rainfall pattern.</p>
+                    <div class="carbon-info">
+                        <i class="fa-solid fa-van-shuttle"></i>
+                        <span>Pristine wilderness with zero-emission transportation </span>
+                    </div>
+                    <button class="btn btn-primary learn-more-button">Learn More</button> </div>
+                <div class="destination-details"> <h4>Mognori Eco-Village:</h4>
+                    <ul>
+                        <li>Is on the eastern side of Mole National Park, along the Mole River.</li>
+                        <li> A charming rural community offering cultural immersion and sustainable ecotourism.</li>
+                        <li>Visitors can enjoy canoe safaris, witness vibrant local culture, and learn about traditional medicines.</li>
+                        <li>The largest of seven conservation areas in Ghana..</li>
+                    </ul>
+                    <ul>
+                        <h1>Hotels Around</h1>
+                        <li><a href="https://www.booking.com/hotel/gh/mole-safari-lodge.en-gb.html?aid=356980&label=gog235jc-10CAsoVUIRbW9sZS1zYWZhcmktbG9kZ2VIM1gDaFWIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AumdkMQGwAIB0gIkY2NlOTdhNDQtY2NhZS00MjY1LTljNDEtMzg5ODNkODZiOWYx2AIB4AIB&sid=137e3b1e56243637bd4a95d11074a1b8&dest_id=-2075609&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1753485039&srpvid=9135a2f5f33e002f&type=total&ucfs=1&" target="_blank">Watergate Lodge</a></li>
+                        <li><a href="https://molemotelgh.com/" target="_blank">Mole Motel</a></li>
+                        <li><a href="https://www.expedia.com/Accra-Hotels-Western-Nordic-Lodge.h42346849.Hotel-Information" target="_blank">Western Nodric Lodge</a></li>
+                    </ul>
+                    <p>Visitors are encouraged to explore by hiking, kayaking, or cycling to minimize environmental impact.</p>
+                    <button class="btn btn-secondary close-details-button">Show Less</button> </div>
+            </div>
+
+            </div>
+    </div>
+    </section>
+    <section class="calculator" id="Calculator">
+        <div class="calculator-main-container">
+            <div class="calculator-form-container">
+                <div class="section-title">
+                    <h2>Carbon Footprint Calculator</h2>
+                    <p>Calculate and offset your travel emissions</p>
+                </div>
+                <div class="calculator-form">
+                    <form id="carbon-form">
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <select id="destination" required>
+                                <option value="">Select destination</option>
+                                <option value="europe">Europe</option>
+                                <option value="asia">Asia</option>
+                                <option value="americas">Americas</option>
+                                <option value="oceania">Oceania</option>
+                                <option value="africa">Africa</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="transport">Transportation</label>
+                            <select id="transport" required>
+                                <option value="">Select transport</option>
+                                <option value="flight">Flight</option>
+                                <option value="train">Train</option>
+                                <option value="bus">Bus</option>
+                                <option value="car">Car</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="duration">Trip Duration (days)</label>
+                            <input type="number" id="duration" min="1" max="365" required>
+                        </div>
+                        <button type="submit" class="calculate-btn">Calculate Impact</button>
+                    </form>
+                    <div class="result" id="result">
+                        <h3>Your Carbon Footprint</h3>
+                        <p id="result-text"></p>
+                        <button class="btn btn-primary" onclick="offsetCarbon()">Offset Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="tips-main-container" id="Tips">
+        <h1 class="section-title">Sustainable Travel Tips</h1>
+        
+        <div class="tips-grid">
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                    </svg>
+                </div>
+                <h3 class="tip-title">Choose Eco-Friendly Accommodations</h3>
+                <p class="tip-description">Look for hotels or lodges with green certifications. If staying at someone's home, try to choose places that use renewable energy and have eco-friendly practices.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                        <polyline points="2,17 12,22 22,17"/>
+                        <polyline points="2,12 12,17 22,12"/>
+                    </svg>
+                </div>
+                <h3 class="tip-title">Support Local Business</h3>
+                <p class="tip-description">Buy from local vendors and artisans. Eat at locally-owned restaurants. Choose locally-run tour companies. This supports the local economy and reduces environmental impact.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M12 2L12 22"/>
+                        <path d="M17 5H9.5C7.01 5 5 7.01 5 9.5S7.01 14 5.5 14H14.5C16.99 14 19 16.01 19 18.5S16.99 23 14.5 23H6"/>
+                    </svg>
+                </div>
+                <h3 class="tip-title">Stay at Green Hotels</h3>
+                <p class="tip-description">Look for eco-certified hotels that use renewable energy, have water conservation programs, and recycle. Many hotels now have green initiatives to reduce their environmental impact.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M12 2.69L13.5 8.94L20.31 8.94L14.9 12.94L16.41 19.19L12 15.19L7.59 19.19L9.1 12.94L3.69 8.94L10.5 8.94L12 2.69Z"/>
+                    </svg>
+                </div>
+                <h3 class="tip-title">Conserve Resources</h3>
+                <p class="tip-description">Take shorter showers, reuse towels, turn off lights and air conditioning when not in the room. Be mindful of water and energy consumption during your stay.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M20 6H16L14 4H10L8 6H4C2.9 6 2 6.9 2 8V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V8C22 6.9 21.1 6 20 6Z"/>
+                    </svg>
+                </div>
+                <h3 class="tip-title">Pack Light & Smart</h3>
+                <p class="tip-description">A lighter luggage means less fuel consumption for transportation. Pack versatile clothing that can be mixed and matched. Bring only what you need to minimize waste.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M21 16V8C21 6.9 20.1 6 19 6H5C3.9 6 3 6.9 3 8V16C3 17.1 3.9 18 5 18H19C20.1 18 21 17.1 21 16Z"/>
+                        <polyline points="7,10 12,13 17,10"/>
+                    </svg>
+                </div>
+                <h3 class="tip-title">Choose Direct Flights</h3>
+                <p class="tip-description">Reduce emissions by booking direct flights when possible. Takeoffs and landings use the most fuel, so fewer connections mean lower carbon footprint. Consider train or bus for shorter distances.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                        <path d="M21 12C21 13.66 16.97 15 12 15S3 13.66 3 12"/>
+                        <path d="M3 5V19C3 20.66 7.03 22 12 22S21 20.66 21 19V5"/>
+                    </svg>
+                </div>
+                <h3 class="tip-title">Offset Your Carbon Footprint</h3>
+                <p class="tip-description">Invest in verified carbon offset programs. Many airlines offer carbon offset options. You can also support renewable energy projects or reforestation initiatives to balance your travel emissions.</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M18.36 6.64C19.15 7.43 19.15 8.72 18.36 9.51L17.66 10.21C16.87 11 15.58 11 14.79 10.21L13.79 9.21C13 8.42 13 7.13 13.79 6.34L14.49 5.64C15.28 4.85 16.57 4.85 17.36 5.64L18.36 6.64Z"/>
+                        <path d="M9 15L15 9"/>
+                        <path d="M5.64 17.36C4.85 16.57 4.85 15.28 5.64 14.49L6.34 13.79C7.13 13 8.42 13 9.21 13.79L10.21 14.79C11 15.58 11 16.87 10.21 17.66L9.51 18.36C8.72 19.15 7.43 19.15 6.64 18.36L5.64 17.36Z"/>
+                    </svg>
+                </div>
+                <h3 class="tip-title">Pack Reusable Items</h3>
+                <p class="tip-description">Pack reusable items like water bottles, shopping bags, and utensils to reduce plastic waste. Bring your own toiletries in refillable containers and avoid single-use items.</p>
+            </div>
+        </div>
+    </div>
+    <section class="bottom-subscription">
+        <div class="subscription-content-container">
+            <h1 class="bottom-title">Join Our Eco-Travel community</h1>
+            <p class="hero-description">
+                Subscribe to receive sustainable travel tips, green destination guides, 
+                and exclusive eco-travel deals right to your inbox. Get monthly insights 
+                on eco-tourism, climate-conscious destinations, and sustainable travel 
+                practices from our community of conscious travelers.
+            </p>
+            
+            <form class="subscription-form" id="heroSubscriptionForm">
+                <input 
+                    type="email" 
+                    class="email-input" 
+                    id="heroEmail"
+                    placeholder="Enter your email address" 
+                    required
+                >
+                <button type="submit" class="subscribe-btn" id="heroSubscribeBtn">
+                    Subscribe Now
+                </button>
+            </form>
+            
+            <div class="message" id="heroMessage"></div>
+            
+            <p class="community-count">Join 10,000+ conscious travelers making a difference</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-sections-container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <div class="logo-icon"><img src="pearson-removebg-preview.png" alt=""></div>
+                    <span style="font-weight: 600; color: #f9fafb;">PEARSON BTEC</span>
+                </div>
+                <p class="footer-description">
+                    Promoting sustainable travel practices and creating unforgettable memories.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Impacts">Climate Impact</a></li>
+                    <li><a href="#Destinations">Destinations</a></li>
+                    <li><a href="#Calculator">Carbon Calculator</a></li>
+                    <li><a href="#Tips">Sustainable Tips</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p style="font-size: 0.9rem; margin-bottom: 1rem;">
+                    Get sustainable travel tips delivered to your inbox
+                </p>
+                <form class="newsletter-form" id="footerSubscriptionForm">
+                    <input 
+                        type="email" 
+                        class="newsletter-input" 
+                        id="footerEmail"
+                        placeholder="Your email" 
+                        required
+                    >
+                    <button type="submit" class="newsletter-btn" id="footerSubscribeBtn">
+                        Subscribe
+                    </button>
+                </form>
+                <div class="message" id="footerMessage"></div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 EcoTravel. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
